@@ -7,20 +7,20 @@ class Zeptoclaw < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-macos-aarch64"
-      sha256 "e63f4b386f156a0797f38db5d0b91aff0c14389368bf7f857bba9af59322df9d"
+      sha256 "06465e35ab1e5690bc375a799a0a6790d56a2abbd751f03405aa6b31d8922fc0"
     else
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-macos-x86_64"
-      sha256 "31688a24a35dc35426720468aa1b9dbf59211ce6f639e8d410a562e7bbe1787d"
+      sha256 "cbdd3e3aae53a921b930bf6d1b85562eb3f5d03df00637a7499ff72628ab23c9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-linux-aarch64"
-      sha256 "b8f563818c9617cdc77cc44c2ddf412c165cb8fe42f578e9a3882977fc82aba3"
+      sha256 "764ad5a89c89a5a7980bf15cd7227f6e559b9c4865a2cedeb42c70e7952356d1"
     else
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-linux-x86_64"
-      sha256 "133f4849f7a64250e1abeb84bc61b42a7f5228336a6277185a8f7a577d0ea6aa"
+      sha256 "7cd096be637fe6892dc21816a0b7f230097b5d444721645d5b3980f209bf21d1"
     end
   end
 
