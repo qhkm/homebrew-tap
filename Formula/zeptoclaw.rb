@@ -1,26 +1,26 @@
 class Zeptoclaw < Formula
   desc "Ultra-lightweight AI assistant framework written in Rust"
   homepage "https://github.com/qhkm/zeptoclaw"
-  version "0.5.9"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-macos-aarch64"
-      sha256 "cf20952ff29b69aaf0846221606b6f46dab51f41ccdaa72988ef10acc6b9b64a"
+      sha256 "21f581113e2711a9f1ff62c16be67febb12f73a711170b7c7fa18107717c2b70"
     else
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-macos-x86_64"
-      sha256 "3ec60c7f890e23334e334b5597a977a5085b1769efa08a9f905a008f50209ffd"
+      sha256 "3440fd085556bcaaba28013a19337ee142fadf34147ed471ddce23071f54b3ee"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-linux-aarch64"
-      sha256 "2e959051b897a01ca7070af9bc1f1622cb42b0fda24250cc2e0b6956158092e0"
+      sha256 "b47be96b36cc4f73638e10ec5cbd5aacdfbfaa40d252d53df8249332eeb3c22c"
     else
       url "https://github.com/qhkm/zeptoclaw/releases/download/v#{version}/zeptoclaw-linux-x86_64"
-      sha256 "b5fbe89359470b4b59f666249ee4b31229795a367a02ab1902baac29f8941a12"
+      sha256 "c3d4ed36494d32c2487ceac0321e1f8263770c079fa079be380d61000c907e17"
     end
   end
 
